@@ -639,6 +639,15 @@ p {
     line-height: 1.4;
     font-weight: normal; }
 
+form, label, legend, fieldset {
+    font-family: "Zona Pro", Helvetica, sans-serif;
+}
+
+label{
+    /*color: #F26522;*/
+    color: #003A70;
+}
+
 blockquote {
     font-size: 1.77778em;
     font-family: "Zona Pro", Helvetica, sans-serif;

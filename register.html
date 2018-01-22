@@ -106,28 +106,40 @@ and open the template in the editor.
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
                     <div class="large-12 cell">
-                        <label>Check In:
-                            <input type="date" name="date">
-                        </label>
+                        <fieldset>
+                            <label>Check In:
+                                <input type="date" name="date">
+                            </label>
+                        </fieldset>
                         <hr>
-                        <label>Check Out:
-                            <input type="date" name="date">
-                        </label>
+                        <fieldset>
+                            <label>Check Out:
+                                <input type="date" name="date">
+                            </label>
+                        </fieldset>
                         <hr>
                         <fieldset>
                             <legend>I will take a transit hotel accommodation on:</legend>
-                        <br>
-                        <input id="checkbox1" type="checkbox"><label for="checkbox1">20th April 2018</label>
-                        <input id="checkbox2" type="checkbox"><label for="checkbox2">21st April 2018</label>
-                        <input id="checkbox3" type="checkbox"><label for="checkbox3">22nd April 2018</label>
-                        <input id="checkbox3" type="checkbox"><label for="checkbox3">23rd April 2018</label>
+                            <br>
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1" style="font-size: 16px;">20th April 2018</label>
+                            <input id="checkbox2" type="checkbox"><label for="checkbox2" style="font-size: 16px;">21st April 2018</label>
+                            <input id="checkbox3" type="checkbox"><label for="checkbox3" style="font-size: 16px;">22nd April 2018</label>
+                            <input id="checkbox3" type="checkbox"><label for="checkbox3" style="font-size: 16px;">23rd April 2018</label>
                         </fieldset>
                         <hr>
                         <fieldset>
-                            <label> Transit Hotel Venue:
+                            <label style="font-size: 15px;"> Transit Hotel Venue: (If invisible below, venue has been automatically set to Eka Hotel)
                                 <input type="text" value="Eka Hotel" readonly>
                             </label>
                         </fieldset>
+                        <hr>
+                        <fieldset>
+                            <label>Any other additional information you may wish to provide?
+                                <textarea name="additional info" rows="4"></textarea>
+                            </label>
+                        </fieldset>
+                        <hr>
+                        <button type="submit" class="button large expanded primary" style="background-color: #F26522;">Submit</button>
                     </div>
                 </div>
             </div>
