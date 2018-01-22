@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -7,16 +13,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="AESA, Community of Practice">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <title>Grand Challenges Africa | Learning and Evalaution Meeting 2018</title>
+        <title>Learning and Evalaution Meeting 2018 | Register</title>
         <!--fonts-->
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css" type="text/css">
         <link rel="stylesheet" href="css/app.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-        <script type="text/javascript">
-            hsjQuery = window['jQuery']
-        </script>
+        <script type="text/javascript">hsjQuery = window['jQuery']</script>
     </head>
 
     <body class="home   hs-content-id-4463059932 hs-site-page page hs-content-path- hs-content-name-2016-home  " style="">
@@ -48,10 +52,9 @@
                                                                 <div class="span9 widget-span widget-type-menu main-nav col-xs-9" style="" data-widget-type="menu" data-x="3" data-w="9">
                                                                     <div class="cell-wrapper layout-widget-wrapper"> <span id="hs_cos_wrapper_module_14198823314745" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_14198823314745" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="Header Menu">
                                                                                 <ul>
-                                                                                    <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="#">Home</a></li>
                                                                                     <li class="hs-menu-item hs-menu-depth-1"><a href="//www.aasciences.ac.ke">AAS</a></li>
                                                                                     <li class="hs-menu-item hs-menu-depth-1"><a href="//www.aesa.ac.ke">AESA</a></li>
-                                                                                    <li class="hs-menu-item hs-menu-depth-1"><a href="register.html">Register</a></li>
+                                                                                    <li class="hs-menu-item hs-menu-depth-1"><a href="index.html">Home</a></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </span> </div>
@@ -98,37 +101,38 @@
                 <!--end row-wrapper -->
             </div>
         </div>
-        <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
-            <div class="row-fluid ">
-                <div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-                    <div class="cell-wrapper layout-widget-wrapper">
-                        <span id="hs_cos_wrapper_module_14400046953444582" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_custom_widget" style="" data-hs-cos-general-type="widget" data-hs-cos-type="custom_widget">
-                            <div class="billboard large w-logobar">
-                                <div class="inner">
-                                    <h1>GC Africa Learning and Evaluation Meeting 2018</h1>
-                                    <!--<br>-->
-                                    <h3>April 2018 to April 2018</h3>
-                                    <!--<br>-->
-                                    <h3>Venue:</h3>
-                                    <strong><h3>Enashipai Resort</h3></strong>
-                                    <h3>Moi S Lake Rd, Naivasha</h3>
-                                </div>
-                                <div class="img-overlay" style="background-image:url('img/deltaspic.jpg')"></div>
-                                <div class="logo-bar">
-                                    <nav>
-                                        <ul>
-                                            <li><img src="img/aas.png" alt="logo-aas" style="height:40px;" title="AAS"></li>
-                                            <li><img src="img/aesa-logo.jpg" alt="aesa-logo" title="AESA"></li>                                            
-                                            <li><img src="img/gca.jpg" alt="logo-gca" style="height:40px;" title="Grand Challenges Africa"></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </span>
-                    </div><!--end layout-widget-wrapper -->
-                </div><!--end widget-span -->
-            </div><!--end row-->
+        <hr>
+        <form>
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="large-12 cell">
+                        <label>Check In:
+                            <input type="date" name="date">
+                        </label>
+                        <hr>
+                        <label>Check Out:
+                            <input type="date" name="date">
+                        </label>
+                        <hr>
+                        <fieldset>
+                            <legend>I will take a transit hotel accommodation on:</legend>
+                        <br>
+                        <input id="checkbox1" type="checkbox"><label for="checkbox1">20th April 2018</label>
+                        <input id="checkbox2" type="checkbox"><label for="checkbox2">21st April 2018</label>
+                        <input id="checkbox3" type="checkbox"><label for="checkbox3">22nd April 2018</label>
+                        <input id="checkbox3" type="checkbox"><label for="checkbox3">23rd April 2018</label>
+                        </fieldset>
+                        <hr>
+                        <fieldset>
+                            <label> Transit Hotel Venue:
+                                <input type="text" value="Eka Hotel" readonly>
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+    </form>
 
+</body>
 </html>
