@@ -20,6 +20,22 @@ and open the template in the editor.
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
         <script type="text/javascript">hsjQuery = window['jQuery']</script>
     </head>
+    <!-- script that writes to spreadsheet via ajax -->
+    <script type="text/javascript">
+        var $form = $('form#registration-form'),
+        url = 'https://script.google.com/macros/u/0/s/AKfycbx_fFp-WWHLvRV4SgSq-JPklxwZIyZnCD_04-zHzUYhjcwGpier/exec'
+        $('#submit-form').on('click', function(e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).success(
+            // do something
+            );
+        })
+    </script>
     <body class="home   hs-content-id-4463059932 hs-site-page page hs-content-path- hs-content-name-2016-home  " style="">
         <div class="header-container-wrapper">
             <div class="header-container container-fluid">
@@ -99,7 +115,7 @@ and open the template in the editor.
             </div>
         </div>
         <hr>
-        <form>
+        <form id="registration-form">
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
                     <div class="large-12 cell">
@@ -148,12 +164,13 @@ and open the template in the editor.
                             </label>
                         </fieldset>
                         <hr>
-                        <button type="submit" class="button large expanded primary" style="background-color: #F26522;">Submit</button>
+                        <button type="submit" class="button large expanded primary" style="background-color: #F26522;" id="submit-form">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </form>
 
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    </body>
 </html>
