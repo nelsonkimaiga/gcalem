@@ -19,18 +19,18 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/app.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
         <script type="text/javascript">hsjQuery = window['jQuery']</script>
-         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
     <!-- script that writes to spreadsheet via ajax -->
     <script type="text/javascript">
         var $form = $('form#registration-form'),
-        url = 'https://script.google.com/macros/u/0/s/AKfycbx_fFp-WWHLvRV4SgSq-JPklxwZIyZnCD_04-zHzUYhjcwGpier/exec'
+        url = 'https://script.google.com/macros/s/AKfycbx_fFp-WWHLvRV4SgSq-JPklxwZIyZnCD_04-zHzUYhjcwGpier/exec'
         $('#submit-form').on('click', function(e) {
             e.preventDefault();
             var jqxhr = $.ajax({
                 url: url,
                 method: "GET",
-                dataType: "json",
+                dataType: "jsonp",
                 data: $form.serializeObject()
             }).success(
             // do something
