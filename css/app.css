@@ -591,7 +591,7 @@ body {
     font-size: 18px; }
 
 h1, h2, .mj-landing-page h3.form-title, .mj-landing-page .resource-feature a.form-title.rc-title, .resource-feature .mj-landing-page a.form-title.rc-title, h3, .resource-feature a.rc-title, h4, h5, h6 {
-    font-family: "Zona Pro", Helvetica, sans-serif; }
+    font-family: "Open Sans", Helvetica, sans-serif; }
 
 h1 {
     font-weight: 300;
@@ -640,7 +640,7 @@ p {
     font-weight: normal; }
 
 form, label, legend, fieldset {
-    font-family: "Zona Pro", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 label{
