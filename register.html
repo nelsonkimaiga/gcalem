@@ -30,10 +30,11 @@ and open the template in the editor.
             var jqxhr = $.ajax({
                 url: url,
                 method: "GET",
-                dataType: "jsonp",
+                dataType: "json",
                 data: $form.serializeObject()
             }).success(
             // do something
+            alert("YOUR SUCCESS MESSAGE HERE");
             );
         })
     </script>
@@ -54,7 +55,7 @@ and open the template in the editor.
                                                         <div class="row-fluid ">
                                                             <div class="span3 widget-span widget-type-rich_text col-xs-3" style="" data-widget-type="rich_text" data-x="0" data-w="3">
                                                                 <div class="cell-wrapper layout-widget-wrapper"> <span id="hs_cos_wrapper_module_14198823314744" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
-                                                                        <a href="//www./">
+                                                                        <a href="index.html">
                                                                             <h1 class="logo"><span>Grand Challenges Africa</span></h1>
                                                                         </a>
                                                                     </span>
