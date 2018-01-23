@@ -120,6 +120,17 @@ and open the template in the editor.
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
                     <div class="large-12 cell">
+                    <fieldset>
+                        <label>Names:
+                            <input type="text" name="names">
+                        </label>
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <label>Email:
+                            <input type="email" name="user_email">
+                        </label>
+                    </fieldset>
                         <fieldset>
                             <label>Check In:
                                 <input type="date" name="checkin_date">
@@ -159,8 +170,10 @@ and open the template in the editor.
                         <hr>
                         <fieldset>
                             <legend>I will participate in the Learning visit on 24<sup>th</sup> May</legend>
-                           <input id="attending_Learning_visit" type="checkbox" name="no"><label for="learningvisitno">Yes</label>
-                        <input id="not_attending_Learning_visit" type="checkbox" name="yes"><label for="learningvisityes">No</label>
+                            <select name="learning_visit" style="height: 50px;">
+                                <option value="Yes">No</option>
+                                <option value="No">Yes</option>
+                            </select>
                         </fieldset>
                         <br>
                         <fieldset>
@@ -175,7 +188,5 @@ and open the template in the editor.
             </div>
         </div>
     </form>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
     </body>
 </html>
