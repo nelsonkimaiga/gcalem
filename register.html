@@ -21,6 +21,71 @@ and open the template in the editor.
         <script type="text/javascript">hsjQuery = window['jQuery']</script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
+    <!-- form validation -->
+    <script>
+    function trim(s) 
+    {
+        return s.replace( /^\s*/, "" ).replace( /\s*$/, "" );
+    }
+
+    function validateForm()
+    {
+        if(trim(document.frmRegister.names.value)=="")
+        {
+          alert("Names field is empty");
+          document.frmRegister.names.focus();
+          return false;
+        }
+        else if(trim(document.frmRegister.user_email.value)=="")
+        {
+          alert("Fill in your email");
+          document.frmRegister.user_email.focus();
+          return false;
+        }
+        else if(trim(document.frmRegister.checkin_date.value)=="")
+        {
+          alert("Fill in your checkin date");
+          document.frmRegister.checkin_date.focus();
+          return false;
+        }
+        else if(trim(document.frmRegister.checkout_date.value)=="")
+        {
+          alert("Fill in your checkout date");
+          document.frmRegister.checkout_date.focus();
+          return false;
+        }
+        else if(trim(document.frmRegister.attending_IDIA_meeting.value)=="")
+        {
+          alert("Confirm if you're attending the IDIA meeting by choosing Yes or No");
+          document.frmRegister.attending_IDIA_meeting.focus();
+          return false;
+        }
+        else if(trim(document.frmRegister.transit_hotel_accomodation.value)=="")
+        {
+          alert("Confirm if you're taking a transit hotel accomdation by choosing Yes or No");
+          document.frmRegister.transit_hotel_accomodation.focus();
+          return false;
+        }
+        else if(trim(document.frmRegister.learning_visit.value)=="")
+        {
+          alert("Confirm if you're attending the Learning visit by chooing Yes or No");
+          document.frmRegister.learning_visit.focus();
+          return false;
+        }
+        else if(trim(document.frmRegister.additional_info.value)=="")
+        {
+          alert("Section on additional info is empty");
+          document.frmRegister.additional_info.focus();
+          return false;
+        }
+
+    }
+    
+    function init()
+    {
+      document.frmRegister.names.focus();
+    }
+    </script>
     <!-- script that writes to spreadsheet via ajax -->
     <script type="text/javascript">
         var $form = $('form#registration-form'),
@@ -117,7 +182,7 @@ and open the template in the editor.
             </div>
         </div>
         <hr>
-        <form id="registration-form" action="https://script.google.com/macros/s/AKfycbx_fFp-WWHLvRV4SgSq-JPklxwZIyZnCD_04-zHzUYhjcwGpier/exec">
+        <form name="frmRegister" id="registration-form" action="https://script.google.com/macros/s/AKfycbx_fFp-WWHLvRV4SgSq-JPklxwZIyZnCD_04-zHzUYhjcwGpier/exec" onsubmit="return validateForm()">
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
                     <div class="large-12 cell">
@@ -183,7 +248,7 @@ and open the template in the editor.
                             </label>
                         </fieldset>
                         <hr>
-                        <button type="submit" class="button large expanded primary" style="background-color: #F26522;" id="submit-form">Submit</button>
+                        <button type="submit" class="button large expanded primary" value="Registration" style="background-color: #F26522;" id="submit-form">Submit</button>
                     </div>
                 </div>
             </div>
