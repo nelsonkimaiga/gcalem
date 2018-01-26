@@ -643,9 +643,12 @@ form, label, legend, fieldset {
     font-family: "Open Sans", Helvetica, sans-serif;
 }
 
+legend, label{
+    font-size: 13.5px;
+}
+
 label{
-    /*color: #F26522;*/
-    /*color: #003A70;*/
+    font-style: normal;
 }
 
 blockquote {
@@ -2328,7 +2331,7 @@ body.secondary-line .footer-container-wrapper {
 
 form label {
     font-size: 1em;
-    font-weight: 600;
+    /*font-weight: 600;*/
     line-height: 1.333; }
 
 form input {

@@ -192,18 +192,22 @@ and open the template in the editor.
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
                     <div class="large-12 cell">
-                    <p><u>Grand Challenges Learning and Evaluation Meeting - Registration.</u></p>
-                    <label style="color: #000; text-align: justify; font-size: 16px;">
-                        We look forward to hosting you at the Grand Challenges Learning & Evaluation Meeting from 22-23 May. The meeting will be held at the Enashipai Hotel in Naivasha, Kenya, which is approximately a two-hour drive from Nairobi.
+                    <p><u><strong>Grand Challenges Learning and Evaluation Meeting - Registration.</strong></u></p>
+                    <label style="color: #000; text-align: justify; font-size: 13px;">
+                        We look forward to hosting you at the Grand Challenges Learning & Evaluation Meeting from 22-23 May 2018. The meeting will be held at the Enashipai Hotel in Naivasha, Kenya, which is approximately a two-hour drive from Nairobi.
                     </label>
                     <hr>
-                    <p style="text-align: justify; font-size: 16px;"><u>Important Logistics Information:</u> <br> <i>Transportation</i> <br><strong>We recommend that participants who are traveling from outside of Kenya arrive in Nairobi on Sunday evening (20 May) or early Monday (21 May) by 14:00</strong>. We will offer several shuttles to Naivasha throughout the day and we will inform you of the exact shuttle timings once flights have been confirmed. Sessions will take place on Tuesday and Wednesday, with a welcome reception on Monday followed by a closing dinner and reception – we encourage participants to stay overnight in Naivasha on Wednesday night. We will provide transportation to the Nairobi airport on Thursday (24 May); we recommend booking a return flight that departs after 12:00 on Thursday to allow adequate time for airport transfers.</p>
+                    <p style="text-align: justify; font-size: 13px;"><u>Important Logistics Information:</u> <br> <i><strong>Transportation</strong></i> <br><strong>We recommend that participants who are traveling from outside of Kenya arrive in Nairobi on Sunday evening (20 May) or early Monday (21 May) by 14:00</strong>. We will offer several shuttles to Naivasha throughout the day and we will inform you of the exact shuttle timings once flights have been confirmed. Sessions will take place on Tuesday and Wednesday, with a welcome reception on Monday followed by a closing dinner and reception – we encourage participants to stay overnight in Naivasha on Wednesday night. We will provide transportation to the JKIA airport on Thursday (24 May); we recommend booking a return flight that departs after 12:00 on Thursday to allow adequate time for airport transfers.</p>
                     <hr>
-                    <label style="font-size: 15px;">Meeting venue: Enashipai Hotel - Naivasha. (A large block of sleeping rooms is being held at Enashipai Hotel at a negotiable rate of $165 per person on bed & breakfast. Once you confirm your hotel nights, a representative from the hotel will reach out for final booking and payment information)</label>
+                    <label style="font-size: 13px;"><strong>Meeting venue:</strong><br>Enashipai Hotel - Naivasha. (A large block of sleeping rooms is being held at Enashipai Hotel at a negotiated rate of $165 per person on bed & breakfast. Once you confirm your hotel nights, a representative from the hotel will reach out for final booking and payment information)</label>
                     <hr>
                     <fieldset>
-                        <label>Names:
-                            <input type="text" name="names">
+                        <label>Surname:
+                            <input type="text" name="surname">
+                        </label>
+                        <hr>
+                        <label>First Name:
+                            <input type="text" name="firstname">
                         </label>
                     </fieldset>
                     <hr>
@@ -230,12 +234,30 @@ and open the template in the editor.
                                 <input type="date" name="checkout_date" min="2018-05-20" max="2018-05-23">
                             </label>
                         </fieldset>
-                        <hr>
-                          <p><strong>IDIA Meeting</strong></p>
+           <hr>
                         <fieldset>
-                            <legend>
+                            <label style="font-size: 13px;"><strong> Transit Hotel Venue:</strong> <br>
+                            While we have held room blocks, participants will be responsible for booking their own accommodation. Due to the timing of flights arriving in Nairobi, not all participants will be able to transfer to the location of the meeting in Naivasha on the day you arrive. In order to facilitate group transfers, we have reserved the Eka Hotel for those arriving after <strong>1700</strong> hours at a negotiated rate of $150 per person on bed & breakfast.
+
+                            <hr>
+                            <select name="transit_hotel_accomodation" style="height: 50px;">
+                                <option value="20th May 2018">20th May 2018</option>
+                                <option value="21st May 2018">21st May 2018</option>
+                                <option value="22nd May 2018">22nd May 2018</option>
+                                <option value="23rd May 2018">23rd May 2018</option>
+                                <option value="24th May 2018">24th May 2018</option>
+                                <option value="25th May 2018">25th May 2018</option>
+                            </select>
+                            <hr>
+                                <input type="text" value="Eka Hotel" name="transit_venue" readonly>
+                            </label>
+                            <hr>
+                        </fieldset>
+                          <p><IDIA Meeting</p>
+                        <fieldset>
+                            <label style="font-style: normal;">
                             We are aware many participants will also be in town for the IDIA meeting(Please note: this is a closed meeting for IDIA members only). For planning purposes, please indicate if you will attend the IDIA meeting on 24 and 25 May. [Yes/No]
-                            </legend>
+                            </label>
                             <select name="attending_IDIA_meeting" style="height: 50px;">
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -243,28 +265,14 @@ and open the template in the editor.
                         </fieldset>
                         <hr>
                         <fieldset>
-                            <legend> While we have held room blocks, participants will be responsible for booking their own accommodation. Rooms will be available for participants in:
+                            <label> While we have held room blocks, participants will be responsible for booking their own accommodation. Rooms will be available for participants in:
                             <br>
-                            <strong>Nairobi:</strong>For those arriving in Nairobi on Sunday, rooms will be available at the Eka Hotel, near the Nairobi airport, at a negotiated group rate of US$150 (bed & breakfast) for the night. I will take a transit hotel accommodation on:</legend>
-                            <br>
-                            <select name="transit_hotel_accomodation" style="height: 50px;">
-                                <option value="20th May 2018">20th May 2018</option>
-                                <option value="21st May 2018">21st May 2018</option>
-                                <option value="22nd May 2018">22nd May 2018</option>
-                                <option value="23rd May 2018">23rd May 2018</option>
-                            </select>
+                            <strong>Nairobi:</strong>For those arriving in Nairobi on Sunday, rooms will be available at the Eka Hotel, near the Nairobi airport, at a negotiated group rate of US$150 (bed & breakfast) for the night. I will take a transit hotel accommodation on:</label>
                         </fieldset>
                         <hr>
+                        <p><u><strong>Optional Site Visit</strong></u></p>
                         <fieldset>
-                            <label style="font-size: 15px;"> Transit Hotel Venue: (If invisible below, venue has been automatically set to Eka Hotel).
-                            Due to the timing of flights arriving in Nairobi, not all participants will be able to transfer to the location of the meeting in Naivasha on the day you arrive. In order to facilitate group transfers, we have reserved the Eka Hotel for those arriving after <strong>1700</strong> hours at a negotiable rate of $150 per person on bed & breakfast.
-                                <input type="text" value="Eka Hotel" name="transit_venue" readonly>
-                            </label>
-                        </fieldset>
-                        <hr>
-                        <p><u>Optional Site Visit</u></p>
-                        <fieldset>
-                            <legend>On 23 May, participants will have the option of joining a site visit to Sanivation, a social enterprise based near the meeting venue in Naivasha. The visit will not conflict with other scheduled programming. Please indicate if you plan to attend. [Yes/No] </legend>
+                            <label>On 23 May, participants will have the option of joining a site visit to <a href="http://www.sanivation.com/" target="_blank">Sanivation,</a> a social enterprise based near the meeting venue in Naivasha. The visit will not conflict with other scheduled programming. Please indicate if you plan to attend. [Yes/No] </label>
                             <select name="learning_visit" style="height: 50px;">
                                 <option value="Yes">No</option>
                                 <option value="No">Yes</option>
@@ -273,7 +281,7 @@ and open the template in the editor.
                         <hr>
                         <label>Evening Events</label>
                         <fieldset>
-                            <legend>We will host a series of events in Naivasha on the evenings of 21, 22 and 23 May, and we encourage all participants to join us. Please indicate your availability below: </legend>
+                            <label>We will host a series of events in Naivasha on the evenings of 21, 22 and 23 May, and we encourage all participants to join us. Please indicate your availability below: </label>
                             <table>
                               <thead>
                                 <td>
@@ -320,9 +328,10 @@ and open the template in the editor.
                         </fieldset>
                         <hr>
                         <fieldset>
-                            <legend>Official Invitation: Will you require an official invitation letter? (If so, a formal letter of invitation will be sent to you via email after completion of your registration). [Yes/No]
-                            Note: The Government of Kenya strongly encourages visitors requiring a visa to obtain visas using their online system <a href="http://evisa.go.ke/evisa.html" target="_blank">(www.evisa.go.ke)</a>in advance of arrival. Proof of yellow fever immunization may be required depending on what country you are arriving from. 
-                            </legend>
+                            <label><strong>Official Invitation:</strong><br> Will you require an official invitation letter? (If so, a formal letter of invitation will be sent to you via email after completion of your registration).
+                            <br>
+                            <strong>Note:</strong> The Government of Kenya strongly encourages visitors requiring a visa to obtain visas using their online system <a href="http://evisa.go.ke/evisa.html" target="_blank">(www.evisa.go.ke)</a>in advance of arrival. Proof of yellow fever immunization may be required depending on what country you are arriving from.
+                            </label>
                             <select name="invitation_letter" style="height: 50px;">
                                         <option value="Yes">Yes</option>
                                         <option value="No">No</option>
@@ -336,6 +345,18 @@ and open the template in the editor.
                         </fieldset>
                         <hr>
                         <button type="submit" class="button large expanded primary" value="Registration" style="background-color: #F26522;" id="submit-form">Submit</button>
+                        <hr>
+                        <h5>Nairobi Transit hotel: <a href="https://wwww.ekahotel.com" target="_blank">Eka Hotel</a></h5>
+                        <strong>P.O Box: 27695 - 00506 Nairobi, Kenya</strong>
+                        <p>
+                            Hotel No: +254-719045000 | 0732105000
+                        </p>
+                        <h5>Point of Contact:</h5>
+                        <strong>Piera Mukami, Sales Account Manager</strong>
+                        <p>
+                            Tel: +254 787637948/725 502352<br>
+                            Email: <a href="mailto:pmukami@ekahotel.com">pmukami@ekahotel.com</a>
+                        </p>
                         <hr>
                         <h5>Hotel Details and Contact Information:</h5>
                         <strong>Naivasha meeting Venue: <a href="https://www.enashipai.com/" target="_blank">Enashipai Resort and Spa</a></strong>
