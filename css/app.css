@@ -3945,3 +3945,22 @@ form .hs-form-booleancheckbox input {
     .not-found__image {
         width: 66.6% !important;
         background-position: right bottom; } }
+
+
+        /*/*forms input*/
+        [type="text"], 
+        [type="password"], 
+        [type="date"], 
+        [type="datetime"], 
+        [type="datetime-local"], 
+        [type="month"], 
+        [type="week"], 
+        [type="email"], 
+        [type="number"], 
+        [type="search"], 
+        [type="tel"], 
+        [type="time"], 
+        [type="url"], 
+        [type="color"] {
+            height: 56px;
+        }
